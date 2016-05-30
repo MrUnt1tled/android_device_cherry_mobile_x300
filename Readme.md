@@ -16,7 +16,7 @@
 
 * Compilation
 
-        # repo init -u git://github.com/dipartshah/android.git -b cm-13.0
+        # repo init -u git://github.com/diparthshah/android.git -b cm-13.0
         
         # repo sync
         
