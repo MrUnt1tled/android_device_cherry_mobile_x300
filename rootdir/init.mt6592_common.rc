@@ -1,13 +1,13 @@
 # platform specific configuration items
-import /init.mt6582.usb.rc
+import /init.mt6592.usb.rc
 import /init.modem.rc
 
 on early-init
     mount debugfs /sys/kernel/debug /sys/kernel/debug
-    setprop ro.mtk.hardware mt6582
+    setprop ro.mtk.hardware mt6592
 
 on init
-    export LD_PRELOAD "/system/lib/libxlog.so /system/lib/libmt6582.so"
+    export LD_PRELOAD "/system/lib/libxlog.so /system/lib/libmt6592.so"
     
     mkdir /protect_f 0771 system system
     mkdir /protect_s 0771 system system
@@ -23,7 +23,7 @@ on init
 
 on fs
     write /proc/bootprof "INIT:eMMC:Mount_All_START"
-    mount_all /fstab.mt6582
+    mount_all /fstab.mt6592
     write /proc/bootprof "INIT:eMMC:Mount_All_END"
 
 # mount different fs end
