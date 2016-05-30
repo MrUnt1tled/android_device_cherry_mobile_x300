@@ -1,8 +1,8 @@
 
-LOCAL_PATH := device/gionee/m2
+LOCAL_PATH := device/cherrymobile/x300
 
 # Board
-TARGET_BOARD_PLATFORM := mt6582
+TARGET_BOARD_PLATFORM := mt6592
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 ARCH_ARM_HAVE_VFP := true
@@ -22,13 +22,13 @@ WITH_DEXPREOPT := false
 DONT_DEXPREOPT_PREBUILTS := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := mt6582
+TARGET_BOOTLOADER_BOARD_NAME := mt6592
 
 TARGET_USERIMAGES_USE_EXT4:=true
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := m2,primo_hm 
+TARGET_OTA_ASSERT_DEVICE := x300,flare_hm 
 
 # MTK HARDWARE
 BOARD_HAS_MTK_HARDWARE := true
@@ -39,7 +39,7 @@ COMMON_GLOBAL_CPPFLAGS += -DMTK_HARDWARE
 BLOCK_BASED_OTA :=false
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/gionee/m2/ril/
+BOARD_RIL_CLASS := ../../../device/cherrymobile/x300/ril/
 
 BOARD_CONNECTIVITY_VENDOR := MediaTek
 BOARD_CONNECTIVITY_MODULE := conn_soc
@@ -74,10 +74,10 @@ BOARD_MKBOOTIMG_ARGS := --board 409385284 --base 0x10000000 --pagesize 2048 --ke
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
 
 # TWRP
-TARGET_RECOVERY_FSTAB := device/gionee/m2/rootdir/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/cherrymobile/x300/rootdir/recovery.fstab
 TW_THEME := portrait_hdpi
-TARGET_SCREEN_HEIGHT := 854
-TARGET_SCREEN_WIDTH := 480
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 TW_INCLUDE_CRYPTO := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 TW_NO_USB_STORAGE := true
