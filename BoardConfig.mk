@@ -75,7 +75,7 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_
 
 # TWRP
 TARGET_RECOVERY_FSTAB := device/cherrymobile/x300/rootdir/recovery.fstab
-TW_THEME := portrait_hdpi
+DEVICE_RESOLUTION := 720x1280
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 TW_INCLUDE_CRYPTO := true
