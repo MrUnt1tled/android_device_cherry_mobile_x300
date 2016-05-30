@@ -1,5 +1,5 @@
-# mt6582 storage specific rc file.
-import /init.mt6582_common.rc
+# mt6592 storage specific rc file.
+import /init.mt6592_common.rc
 
 on init
 
