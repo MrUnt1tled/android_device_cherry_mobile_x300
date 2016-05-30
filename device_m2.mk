@@ -1,5 +1,5 @@
 
-LOCAL_PATH := device/gionee/m2
+LOCAL_PATH := device/cherrymobile/x300
 
 PRODUCT_CHARACTERISTICS := default
 
@@ -19,7 +19,7 @@ PRODUCT_PACKAGES += \
     libxlog
 
 PRODUCT_PACKAGES += \
-    lights.mt6582
+    lights.mt6592
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -30,7 +30,7 @@ PRODUCT_PACKAGES += \
     tinymix
 
 PRODUCT_PACKAGES += \
-    audio.primary.mt6582
+    audio.primary.mt6592
 
 PRODUCT_PACKAGES += \
     audio_policy.default
@@ -54,20 +54,20 @@ PRODUCT_COPY_FILES += \
 # GSM
 #PRODUCT_PACKAGES += \
 #    gsm0710muxd
-PRODUCT_PACKAGES += libmt6582
+PRODUCT_PACKAGES += libmt6592
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril_class=MediaTekRIL
 
 # Rootdir
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/fstab.mt6582:root/fstab.mt6582 \
-    $(LOCAL_PATH)/rootdir/init.recovery.mt6582.rc:recovery/root/init.recovery.mt6582.rc \
-    $(LOCAL_PATH)/rootdir/init.mt6582.rc:root/init.mt6582.rc \
-    $(LOCAL_PATH)/rootdir/init.mt6582_common.rc:root/init.mt6582_common.rc \
+    $(LOCAL_PATH)/rootdir/fstab.mt6592:root/fstab.mt6592 \
+    $(LOCAL_PATH)/rootdir/init.recovery.mt6592.rc:recovery/root/init.recovery.mt6592.rc \
+    $(LOCAL_PATH)/rootdir/init.mt6592.rc:root/init.mt6592.rc \
+    $(LOCAL_PATH)/rootdir/init.mt6592_common.rc:root/init.mt6592_common.rc \
     $(LOCAL_PATH)/rootdir/init.modem.rc:root/init.modem.rc \
-    $(LOCAL_PATH)/rootdir/ueventd.mt6582.rc:root/ueventd.mt6582.rc \
-    $(LOCAL_PATH)/rootdir/init.mt6582.usb.rc:root/init.mt6582.usb.rc \
+    $(LOCAL_PATH)/rootdir/ueventd.mt6592.rc:root/ueventd.mt6592.rc \
+    $(LOCAL_PATH)/rootdir/init.mt6592.usb.rc:root/init.mt6592.usb.rc \
     $(LOCAL_PATH)/rootdir/enableswap.sh:root/enableswap.sh \
     $(LOCAL_PATH)/rootdir/factory_init.rc:root/factory_init.rc \
     $(LOCAL_KERNEL):kernel
@@ -130,7 +130,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PROPERTY_OVERRIDES := \
 	ro.mediatek.version.release=ALPS.W10.24.p0 \
-	ro.mediatek.platform=MT6582 \
+	ro.mediatek.platform=MT6592 \
 	ro.mediatek.chip_ver=S01 \
 	ro.mediatek.version.branch=KK1.MP1 \
 	ro.mediatek.version.sdk=2 \
@@ -142,12 +142,12 @@ PRODUCT_PROPERTY_OVERRIDES := \
 	persist.service.debuggable=1 \
 	persist.mtk.wcn.combo.chipid=-1
 
-PRODUCT_NAME := full_m2
-PRODUCT_DEVICE := m2
+PRODUCT_NAME := full_x300
+PRODUCT_DEVICE := x300
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 854
-TARGET_SCREEN_WIDTH := 480
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 
 PRODUCT_PACKAGES += \
     librs_jni \
