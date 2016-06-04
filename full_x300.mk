@@ -19,15 +19,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit Proprietary Stuff
-$(call inherit-product, vendor/gionee/m2/m2-vendor.mk)
+$(call inherit-product, vendor/cherrymobile/x300/x300-vendor.mk)
 
 # Inherit device specific files
-$(call inherit-product, device/gionee/m2/device_m2.mk)
+$(call inherit-product, device/cherrymobile/x300/device_x300.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := m2
-PRODUCT_NAME := full_m2
-PRODUCT_BRAND := gionee
-PRODUCT_MODEL := m2
-PRODUCT_MANUFACTURER := gionee 
+PRODUCT_DEVICE := x300
+PRODUCT_NAME := full_x300
+PRODUCT_BRAND := cherrymobile
+PRODUCT_MODEL := FlareS3_Power
+PRODUCT_MANUFACTURER := cherrymobile 
 
